@@ -13924,7 +13924,7 @@ class Main extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
             this.setState({ isLoading: true });
 
-            __WEBPACK_IMPORTED_MODULE_4_axios___default.a.post('api/getsearch/?query=' + query, {}).then(response => {
+            __WEBPACK_IMPORTED_MODULE_4_axios___default.a.get('api/getsearch/?query=' + query).then(response => {
                 const images = [];
 
                 if (response && !response.error) {
