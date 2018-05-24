@@ -26,7 +26,7 @@ class GalleryController extends Controller
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_URL,'http://api.giphy.com/v1/gifs/trending?api_key=sswps9dkU0xxsI8vTgZTHv17rjko3NnX&limit=12&offset='.$offset);
+        curl_setopt($ch, CURLOPT_URL,'https://api.giphy.com/v1/gifs/trending?api_key=sswps9dkU0xxsI8vTgZTHv17rjko3NnX&limit=12&offset='.$offset);
         $result=curl_exec($ch);
         curl_close($ch);
 
