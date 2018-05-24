@@ -44,7 +44,7 @@ return [
             'host' => env('DB_HOST', 'db4free.net'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'kraken_db3'),
-            'username' => env('DB_USERNAME', 'root_db3'),
+            'username' => env('DB_USERNAME', 'root_user3'),
             'password' => env('DB_PASSWORD', '!Tacio2018'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
