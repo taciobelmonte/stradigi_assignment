@@ -1,5 +1,5 @@
 <?php
-URL::forceSchema('https');
+URL::forceScheme('https');
 
 use Illuminate\Http\Request;
 
