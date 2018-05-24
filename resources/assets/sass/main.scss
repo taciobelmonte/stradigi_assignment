@@ -61,7 +61,7 @@ header{
 //Logo
 .logo{
   float:left;
-  margin:20px 0 0 0;
+  margin:17px 0 0 0;
 }
 
 //Menu
@@ -139,13 +139,14 @@ header{
   .inner{
     float:left;
     width:100%;
-    margin:70px 0 0 0;
+    margin:40px 0 0 0;
   }
 }
 
 .item{
   border-radius:5px;
-  min-height:230px;
+  padding:11%;
+  //min-height:230px;
   margin:0 0 25px 0;
   cursor:pointer;
   @include transition(all 0.5s ease);
@@ -164,7 +165,7 @@ header{
   cursor: pointer;
   position:relative;
   display:none;
-  margin:30px 0 0 30px;
+  margin:26px 0 0 30px;
   right:-100%;
   @include transition(all 0.5s ease);
 }

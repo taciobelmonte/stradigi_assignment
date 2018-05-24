@@ -26,7 +26,6 @@
 
   .item{
     width:23%;
-    min-height:165px;
   }
 
   #panel .inner{
@@ -35,6 +34,14 @@
 
   .col-75{
     width:85%;
+  }
+
+  .col-md-6{
+    width:100%!important;
+  }
+
+  .panel-default input[type=text], .panel-default input[type=email], .panel-default input[type=password]{
+    width:90%;
   }
 
 }
@@ -65,7 +72,6 @@
 
   .item{
     width:23%;
-    min-height:150px;
   }
 }
 
@@ -81,7 +87,7 @@
     margin-bottom:15px;
     cursor: pointer;
     width:48.5%;
-    min-height:220px;
+    padding:22%!important;
   }
 
   .inner-modal{
@@ -97,10 +103,10 @@
 
   .item {
     border-radius: 5px;
-    min-height: 165px;
     margin-bottom:15px;
     cursor: pointer;
     width:48.6%;
+    padding:22%!important;
   }
 
 }

@@ -32,4 +32,4 @@ However, some parts of backend has been implementend.
 
 Some features are not fully finalized, especially in the backend. For example, the login process. Currently, logged-in user information is not fully integrated, causing incorrect uploads to certain views.
 
-Another point that was not implemented was the addition of the avatar of the user.
+Another point that was not implemented was the addition of the avatar of the user and also user notifications.
