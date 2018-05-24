@@ -58,9 +58,9 @@ Route::get('{slug}', function() {
 
 Auth::routes();
 
-Route::get('/api/getgallery', 'GalleryController@getGallery');
-Route::get('/api/getcontent', 'ListController@getContent');
-Route::get('/api/getsearch', 'SearchController@getsearch');
+Route::get('api/getgallery', 'GalleryController@getGallery');
+Route::get('api/getcontent', 'ListController@getContent');
+Route::get('api/getsearch', 'SearchController@getsearch');
 
 
 //Route::get('/search', 'SearchController@index');
