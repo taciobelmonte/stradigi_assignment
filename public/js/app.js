@@ -13837,6 +13837,7 @@ class Login extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_whatwg_fetch__ = __webpack_require__(288);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_whatwg_fetch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_whatwg_fetch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_Api__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__util_Api___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__util_Api__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_axios__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_axios__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Index__ = __webpack_require__(137);
@@ -13880,7 +13881,7 @@ class Main extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
         }, this.getImages = () => {
             this.setState({ isLoading: true });
 
-            __WEBPACK_IMPORTED_MODULE_3__util_Api__["a" /* getInfo */]('api/getgallery/?offset=' + this.state.offset).then(items => {
+            __WEBPACK_IMPORTED_MODULE_3__util_Api__["getInfo"]('api/getgallery/?offset=' + this.state.offset).then(items => {
                 const images = [];
                 if (items && !items.error) {
                     items.data.data.forEach(function (element) {
@@ -13906,7 +13907,7 @@ class Main extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
                 }
             });
         }, this.getContent = () => {
-            __WEBPACK_IMPORTED_MODULE_3__util_Api__["a" /* getInfo */]('api/getcontent').then(panels => {
+            __WEBPACK_IMPORTED_MODULE_3__util_Api__["getInfo"]('api/getcontent').then(panels => {
 
                 const contents = [];
                 if (panels && !panels.error) {
@@ -13924,7 +13925,7 @@ class Main extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
             this.setState({ isLoading: true });
 
-            __WEBPACK_IMPORTED_MODULE_3__util_Api__["a" /* getInfo */]('api/getsearch/?query=' + query).then(response => {
+            __WEBPACK_IMPORTED_MODULE_3__util_Api__["getInfo"]('api/getsearch/?query=' + query).then(response => {
                 const images = [];
 
                 if (response && !response.error) {
@@ -14519,26 +14520,9 @@ class Search extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
 /***/ }),
 /* 145 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_whatwg_fetch__ = __webpack_require__(288);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_whatwg_fetch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_whatwg_fetch__);
-//API to request data via HTTP
-
-const ROOT = "http://api.giphy.com/v1/gifs/trending?api_key=sswps9dkU0xxsI8vTgZTHv17rjko3NnX&limit=15";
-
-let token = localStorage.token;
-if (!token) token = localStorage.token = Math.random().toString(36).substr(-8);
-
-const headers = {
-    'Accept': 'application/json',
-    'Authorization': token
-};
-
-const getInfo = url => fetch(`${url}`, { headers }).then(res => res.json()).then(data => data);
-/* harmony export (immutable) */ __webpack_exports__["a"] = getInfo;
-
+throw new Error("Module build failed: SyntaxError: Unexpected token (11:33)\n\n\u001b[0m \u001b[90m  9 | \u001b[39m\u001b[36mconst\u001b[39m headers \u001b[33m=\u001b[39m {\n \u001b[90m 10 | \u001b[39m    \u001b[32m'Accept'\u001b[39m\u001b[33m:\u001b[39m \u001b[32m'application/json'\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 | \u001b[39m    \u001b[32m'Access-Control-Allow-Origin'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m    | \u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 | \u001b[39m    \u001b[32m'Authorization'\u001b[39m\u001b[33m:\u001b[39m token\u001b[33m,\u001b[39m\n \u001b[90m 13 | \u001b[39m}\u001b[33m;\u001b[39m\n \u001b[90m 14 | \u001b[39m\u001b[0m\n");
 
 /***/ }),
 /* 146 */
