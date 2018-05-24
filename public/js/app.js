@@ -13623,7 +13623,7 @@ class List extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
     render() {
         const { panels } = this.props;
-        console.log(panels);
+        //console.log(panels);
 
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',

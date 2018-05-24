@@ -9,7 +9,7 @@ class List extends Component {
 
     render() {
         const {panels } = this.props;
-        console.log(panels);
+        //console.log(panels);
 
         return (
 
