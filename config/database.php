@@ -41,10 +41,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', 'us-cdbr-iron-east-04.cleardb.net'),
-            'database' => env('DB_DATABASE', 'heroku_b1094a665895ae3'),
-            'username' => env('DB_USERNAME', 'b0b843a4a2acf8'),
-            'password' => env('DB_PASSWORD', '5c55b08e'),
+            'host' => env('DB_HOST', 'db4free.net'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'kraken_db3'),
+            'username' => env('DB_USERNAME', 'root_db3'),
+            'password' => env('DB_PASSWORD', '!Tacio2018'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
