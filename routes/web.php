@@ -59,9 +59,10 @@ Route::get('{slug}', function() {
 Auth::routes();
 
 Route::get('api/getgallery', 'GalleryController@getGallery');
+Route::get('api/getgallery/?offset=[0-9]+', 'GalleryController@getGallery');
 Route::get('api/getcontent', 'ListController@getContent');
 Route::get('api/getsearch', 'SearchController@getsearch');
-
+Route::get('api/getsearch/?query=[A-Za-z]+', 'SearchController@getsearch');
 
 //Route::get('/search', 'SearchController@index');
 //Route::get('/getsearch', 'SearchController@getsearch' );
