@@ -1,0 +1,35 @@
+.col-25 {
+  @include span-columns(3);
+  @include omega(4n);
+}
+
+.col-29 {
+  float:left;
+  width:29%;
+}
+
+.col-33 {
+  @include span-columns(4);
+  @include omega(3n);
+}
+
+.col-50 {
+  @include span-columns(6);
+  @include omega(2n);
+}
+
+.col-55 {
+  width:55%;
+}
+
+.col-66 {
+  @include span-columns(8);
+}
+
+.col-75 {
+  @include span-columns(9);
+}
+
+.col-100 {
+  @include span-columns(12);
+}
