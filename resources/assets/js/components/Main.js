@@ -31,7 +31,7 @@ class Main extends Component {
     getImages = () =>{
         this.setState({isLoading: true});
 
-        Api.getInfo('https://stradigi.herokuapp.com/api/getgallery/?offset='+this.state.offset).then(items => {
+        Api.getInfo('api/getgallery/?offset='+this.state.offset).then(items => {
             const images = [];
             if(items && !items.error){
                 items.data.data.forEach(function(element) {
@@ -80,7 +80,7 @@ class Main extends Component {
 
         this.setState({isLoading: true});
 
-        Api.getInfo('https://stradigi.herokuapp.com/api/getsearch/?query='+ query).then((response) => {
+        Api.getInfo('api/getsearch/?query='+ query).then((response) => {
             const images = [];
 
             if(response && !response.error){
