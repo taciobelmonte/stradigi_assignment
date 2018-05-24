@@ -14526,7 +14526,6 @@ class Search extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_whatwg_fetch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_whatwg_fetch__);
 //API to request data via HTTP
 
-const ROOT = "http://api.giphy.com/v1/gifs/trending?api_key=sswps9dkU0xxsI8vTgZTHv17rjko3NnX&limit=15";
 
 let token = localStorage.token;
 if (!token) token = localStorage.token = Math.random().toString(36).substr(-8);
