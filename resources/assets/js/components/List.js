@@ -19,10 +19,12 @@ class List extends Component {
 
                     {panels.map((item,i) => (
                         <article key={i} className="panel-item col-55 inner">
-                            <div className="center col-75">
-                                <h2>{item.title}</h2>
-                                <div className="content-text"> <p>{item.text}</p> </div>
+                            <div className="middle">
+                                <div className="center col-75">
+                                    <h2>{item.title}</h2>
+                                    <div className="content-text"> <p>{item.text}</p> </div>
                                 </div>
+                            </div>
                         </article>
                     ))}
 

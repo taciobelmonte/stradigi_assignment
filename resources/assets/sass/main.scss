@@ -462,18 +462,22 @@ header{
 
 }
 
+.middle{
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .panel-item{
-  display:table;
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 
   .center{
-    display:inline-table;
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    margin:auto!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
     text-align:center;
+    float: none;
   }
 }
 
@@ -586,4 +590,11 @@ header{
   .loading{
     width:60px!important;
   }
+}
+
+.btn-primary{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid #bbb;
+  background: #fff;
 }

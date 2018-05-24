@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
+import 'whatwg-fetch';
 import * as Api from './../util/Api';
 import axios from 'axios';
 import Index from './Index';

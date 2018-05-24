@@ -1,4 +1,5 @@
 //API to request data via HTTP
+import 'whatwg-fetch';
 const ROOT = "http://api.giphy.com/v1/gifs/trending?api_key=sswps9dkU0xxsI8vTgZTHv17rjko3NnX&limit=15";
 
 let token = localStorage.token;
