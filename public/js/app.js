@@ -13880,7 +13880,7 @@ class Main extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
         }, this.getImages = () => {
             this.setState({ isLoading: true });
 
-            __WEBPACK_IMPORTED_MODULE_3__util_Api__["a" /* getInfo */]('/api/getgallery/?offset=' + this.state.offset).then(items => {
+            __WEBPACK_IMPORTED_MODULE_3__util_Api__["a" /* getInfo */]('api/getgallery/?offset=' + this.state.offset).then(items => {
                 const images = [];
                 if (items && !items.error) {
                     items.data.data.forEach(function (element) {
@@ -13906,7 +13906,7 @@ class Main extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
                 }
             });
         }, this.getContent = () => {
-            __WEBPACK_IMPORTED_MODULE_3__util_Api__["a" /* getInfo */]('/api/getcontent').then(panels => {
+            __WEBPACK_IMPORTED_MODULE_3__util_Api__["a" /* getInfo */]('api/getcontent').then(panels => {
 
                 const contents = [];
                 if (panels && !panels.error) {
@@ -13924,7 +13924,7 @@ class Main extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
             this.setState({ isLoading: true });
 
-            __WEBPACK_IMPORTED_MODULE_3__util_Api__["a" /* getInfo */]('/api/getsearch/?query=' + query).then(response => {
+            __WEBPACK_IMPORTED_MODULE_3__util_Api__["a" /* getInfo */]('api/getsearch/?query=' + query).then(response => {
                 const images = [];
 
                 if (response && !response.error) {

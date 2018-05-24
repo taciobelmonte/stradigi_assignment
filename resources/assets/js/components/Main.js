@@ -31,7 +31,7 @@ class Main extends Component {
     getImages = () =>{
         this.setState({isLoading: true});
 
-        Api.getInfo('/api/getgallery/?offset='+this.state.offset).then(items => {
+        Api.getInfo('api/getgallery/?offset='+this.state.offset).then(items => {
             const images = [];
             if(items && !items.error){
                 items.data.data.forEach(function(element) {
@@ -60,7 +60,7 @@ class Main extends Component {
     };
 
     getContent = () =>{
-        Api.getInfo('/api/getcontent').then(panels => {
+        Api.getInfo('api/getcontent').then(panels => {
 
             const contents = [];
             if(panels && !panels.error){
@@ -80,7 +80,7 @@ class Main extends Component {
 
         this.setState({isLoading: true});
 
-        Api.getInfo('/api/getsearch/?query='+ query).then((response) => {
+        Api.getInfo('api/getsearch/?query='+ query).then((response) => {
             const images = [];
 
             if(response && !response.error){
