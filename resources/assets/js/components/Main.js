@@ -80,7 +80,7 @@ class Main extends Component {
 
         this.setState({isLoading: true});
 
-        axios.get('api/getsearch/?query='+ query).then(response=> {
+        Api.getInfo('api/getsearch/?query='+ query).then((response) => {
             const images = [];
 
             if(response && !response.error){
@@ -108,10 +108,7 @@ class Main extends Component {
                     finished: true
                 });
             }
-        }).catch(error=> {
-
-            });
-
+        });
     };
 
     render() {

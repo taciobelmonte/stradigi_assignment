@@ -13924,7 +13924,7 @@ class Main extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
 
             this.setState({ isLoading: true });
 
-            __WEBPACK_IMPORTED_MODULE_4_axios___default.a.get('api/getsearch/?query=' + query).then(response => {
+            __WEBPACK_IMPORTED_MODULE_3__util_Api__["a" /* getInfo */]('api/getsearch/?query=' + query).then(response => {
                 const images = [];
 
                 if (response && !response.error) {
@@ -13951,7 +13951,7 @@ class Main extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
                         finished: true
                     });
                 }
-            }).catch(error => {});
+            });
         }, _temp;
     }
 

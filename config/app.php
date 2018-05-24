@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://stradigi.herokuapp.com/'),
+    'url' => env('APP_URL', 'http://stradigi.herokuapp.com'),
 
     /*
     |--------------------------------------------------------------------------
